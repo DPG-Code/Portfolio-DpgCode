@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+} 
+::-webkit-scrollbar-thumb {
+  background: #0D0D0D;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.transition-fade{
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar a{
+  transition: all 0.2s ease-in-out;
+  }
+  .navbar a:hover{
+    color: #0D0D0D;
+  }
+.navbar .dot {
+  width: 5px;
+  height: 5px;
+  background: #0D0D0D;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  }
+  .navbar a:hover ~ .dot {
+    transform: translateY(-18px);
+    opacity: 1;
+  }
+
+.me{
+  filter: grayscale(100%);
+}
+
+.preview-button:hover{
+  transform: scale(1.035);
+}
+
+.icon-animation:hover > svg{
+  transition: all 0.2s ease-in-out;
+  transform: translateX(4px);
+}
+.circle_contact-1{
+  width: 220px;
+  height: 220px;
+  border: 1.4em solid #F3D335;
+  border-radius: 100%;
+  position: absolute;
+}
+.circle_contact-down, .circle_contact-down-2{
+  width: 220px;
+  height: 220px;
+  border: 1.4em solid #0d0d0d18;
+  border-radius: 100%;
+  position: absolute;
+  right: 52.5%;
+}
+.circle_contact-down-2{
+  left: 52.5%;
+}
+
+@media only screen and (min-width : 640px){
+  .circle_contact-1{
+    width: 320px;
+    height: 320px;
+    border: 1.6em solid #F3D335;
+  }
+  .circle_contact-down, .circle_contact-down-2{
+    width: 320px;
+    height: 320px;
+    border: 1.6em solid #0d0d0d18;
+  }
+}
+
+@media only screen and (min-width : 1024px){
+  .navbar a:hover ~ .dot {
+    transform: translateY(-30px);
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width : 1536px){
+  .navbar a:hover ~ .dot {
+    transform: translateY(-40px);
+    opacity: 1;
+  }
+  .circle_contact-1{
+    width: 420px;
+    height: 420px;
+    border: 2em solid #F3D335;
+  }
+  .circle_contact-down, .circle_contact-down-2{
+    width: 420px;
+    height: 420px;
+    border: 2em solid #0d0d0d18;
+  }
+}

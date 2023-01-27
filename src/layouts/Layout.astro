@@ -1,0 +1,27 @@
+---
+import Header from '../components/Header';
+
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+    <meta name="author" content="Daniel Prieto Gaviria">
+		<link rel="icon" type="image/png" href="/assets/icon.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+    <meta name="description" content="Daniel Prieto Gaviria Front-end Developer | Technologies such as JavaScript, TypeScript, React.js, Next.js, Node.js, MongoDB">
+    <meta name="keywords" content="Daniel Prieto Gaviria, DPG-code, Front-end developer, programador web, full stack developer">
+	</head>
+	<body>
+    <Header />
+		<slot />
+	</body>
+</html>
