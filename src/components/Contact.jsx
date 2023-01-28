@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div id='contact' className="px-6 overflow-hidden	h-screen min-h-[600px] w-full flex flex-col items-center justify-center relative gap-2   sm:gap-4   2xl:gap-10">
+    <div id='contact' className="px-6 overflow-hidden	h-screen min-h-[600px] w-full flex flex-col items-center justify-center relative gap-2   sm:gap-4 sm:px-16   2xl:gap-10">
       <h2 className="z-30 font-bold text-3xl text-[#0D0D0D] text-center   sm:text-5xl   2xl:text-8xl">Let's works together</h2>
       <a href="mailto:prietogaviriadaniel@gmail.com" className="icon-animation z-30 font-semibold text-lg text-[#0D0D0D] flex items-center justify-center gap-2   sm:text-xl sm:gap-4   2xl:text-3xl 2xl:gap-6">
         Contact me

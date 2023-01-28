@@ -13,7 +13,7 @@ const ButtonView = ({ url }) => {
 
 export default function Works() {
   return (
-    <section id='works' className="px-6 py-16 flex flex-col   lg:p-24   2xl:p-36">
+    <section id='works' className="px-6 py-16 flex flex-col   sm:p-16   lg:p-24   2xl:p-36">
       <h2 className="mb-16 font-bold text-3xl text-[#0D0D0D]   lg:text-5xl lg:mb-24   2xl:text-6xl 2xl:mb-32">Works<span className='text-[#F3D335]'>.</span></h2>
       <article className="flex flex-col gap-16">
         {

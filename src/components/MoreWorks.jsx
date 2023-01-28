@@ -14,7 +14,7 @@ const ButtonView = ({ url }) => {
 
 export default function MoreWorks() {
   return (
-    <article className="px-6 pt-16 flex flex-col   lg:px-24   2xl:px-36">
+    <article className="px-6 pt-16 flex flex-col   sm:px-16   lg:px-24   2xl:px-36">
       <h2 id='more-works' className="mb-16 font-bold text-3xl text-[#0D0D0D]   lg:text-5xl   2xl:text-6xl 2xl:mb-24">More Works<span className='text-[#F3D335]'>.</span></h2>
       <section className="flex flex-col items-center gap-12">
         {
