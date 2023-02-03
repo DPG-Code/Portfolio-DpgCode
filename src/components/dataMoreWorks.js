@@ -1,13 +1,8 @@
 const moreWorks = [
   {
-    title: 'freegames',
-    description: 'Game list for web and pc.',
-    url: 'https://dpg-games.netlify.app'
-  },
-  {
-    title: 'your weather',
-    description: 'Weather App.',
-    url: 'https://dpg-code.github.io/Your-Weather-DPG'
+    title: 'Cocktails app',
+    description: 'Search and filter your favorites cocktails.',
+    url: 'https://cocktails-app-dpg.netlify.app'
   },
   {
     title: 'exchange rate',
