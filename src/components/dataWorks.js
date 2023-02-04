@@ -3,15 +3,8 @@ const works = [
     title: 'Xkcd comics',
     description: 'Read and search XKCD Comics.',
     technologies: ['NEXT.JS', 'TAILWIND', 'NEXT UI', 'ALGOLIA'],
-    img: '/assets/xkcd.webp',
+    img: '/assets/xkcd-app.webp',
     url: 'https://xkcd-app-taupe.vercel.app'
-  },
-  {
-    title: 'Gifree',
-    description: 'Search gifs, apply filters and share it.',
-    technologies: ['REACT.JS', 'TYPESCRIPT', 'DENO'],
-    img: '/assets/gifs.webp',
-    url: 'https://gi-free.vercel.app'
   },
   {
     title: 'Notes app',
@@ -23,21 +16,28 @@ const works = [
       'JEST/CYPRESS',
       'TAILWIND'
     ],
-    img: '/assets/notes.webp',
+    img: '/assets/notes-app.webp',
     url: 'https://notes-app-y1me.onrender.com'
   },
   {
     title: 'Weather app',
     description: 'Get many weather info about your location.',
     technologies: ['SVELTE KIT', 'SVELTE'],
-    img: '/assets/weather.webp',
+    img: '/assets/weather-app.webp',
     url: 'https://weather-app-dpg.vercel.app'
+  },
+  {
+    title: 'Gifree',
+    description: 'Search gifs, apply filters and share it.',
+    technologies: ['REACT.JS', 'TYPESCRIPT', 'DENO'],
+    img: '/assets/gifree.webp',
+    url: 'https://gi-free.vercel.app'
   },
   {
     title: 'Freegames',
     description: 'Game list for web and pc.',
     technologies: ['REACT.JS', 'WOUTER', 'VITE'],
-    img: '/assets/games.webp',
+    img: '/assets/free-games.webp',
     url: 'https://dpg-games.netlify.app'
   }
 ]
