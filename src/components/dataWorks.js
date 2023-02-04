@@ -3,14 +3,14 @@ const works = [
     title: 'Xkcd comics',
     description: 'Read and search XKCD Comics.',
     technologies: ['NEXT.JS', 'TAILWIND', 'NEXT UI', 'ALGOLIA'],
-    img: '/assets/xkdc.webp',
+    img: '/assets/xkcd.webp',
     url: 'https://xkcd-app-taupe.vercel.app'
   },
   {
     title: 'Gifree',
     description: 'Search gifs, apply filters and share it.',
     technologies: ['REACT.JS', 'TYPESCRIPT', 'DENO'],
-    img: '/assets/gifree.webp',
+    img: '/assets/gifs.webp',
     url: 'https://gi-free.vercel.app'
   },
   {

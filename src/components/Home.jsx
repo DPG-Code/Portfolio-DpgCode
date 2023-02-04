@@ -21,9 +21,9 @@ export default function Home() {
           </a>
         </div>
       </section>
-      <aside className='px-6 w-full flex items-center justify-center   lg:px-0 lg:w-2/5'>
+      <aside className='transition-getIn px-6 w-full flex items-center justify-center   lg:px-0 lg:w-2/5'>
         <img className='z-30 me w-auto h-52   xs:h-56   lg:h-80   2xl:h-[420px]' src='/assets/me.webp' alt="Picture me" />
-        <div className='transition-getIn z-20 w-48 h-48 font-bold text-sm text-[#0D0D0D] flex flex-col items-start justify-center absolute   xs:w-52 xs:h-52   lg:w-72 lg:h-72 lg:text-lg   2xl:w-96 2xl:h-96 2xl:text-3xl'>
+        <div className='z-20 w-48 h-48 font-bold text-sm text-[#0D0D0D] flex flex-col items-start justify-center absolute   xs:w-52 xs:h-52   lg:w-72 lg:h-72 lg:text-lg   2xl:w-96 2xl:h-96 2xl:text-3xl'>
           {
             technologies.map(tech => (
               <p key={tech} className='opacity-[.15]'>{tech}</p>
