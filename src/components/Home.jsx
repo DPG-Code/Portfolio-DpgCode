@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <main id='home' className='h-screen min-h-[700px] w-full flex flex-col items-center justify-center gap-12 relative   sm:px-16   lg:flex-row lg:px-24   2xl:px-36'>
       <section className='px-6 w-full flex flex-col items-start justify-start gap-6   lg:px-0 lg:w-3/5   2xl:gap-10'>
-        <h1 className='transition-getIn font-bold text-3xl text-[#0D0D0D]   xs:text-4xl   sm:text-5xl   2xl:text-7xl'>front-end developer & graphic designer.</h1>
-        <h3 className='font-normal text-xs text-[#595959]   xs:text-sm   sm:text-base   2xl:text-2xl'>I'm Daniel Prieto. I have <span className='font-semibold'>+2 years</span> of experience working as a developer and <span className='font-semibold'>+3 years</span> in design, I have successfully completed many projects and web apps.</h3>
+        <h1 id='title-home' className='transition-getIn font-bold text-[#0D0D0D] leading-tight'>front-end developer & graphic designer.</h1>
+        <h3 id='description-home' className='font-normal text-[#595959]'>I'm Daniel Prieto. I have <span className='font-semibold'>+2 years</span> of experience working as a developer and <span className='font-semibold'>+3 years</span> in design, I have successfully completed many projects and web apps.</h3>
         <div className='w-full flex items-center gap-6   lg:gap-12   2xl:gap-20'>
           <a href="#works" className='icon-animation font-semibold text-xs text-[#0D0D0D] flex items-center justify-center gap-2   xs:text-sm   sm:text-base sm:gap-4   2xl:text-2xl 2xl:gap-6'>
             SEE MY WORKS
