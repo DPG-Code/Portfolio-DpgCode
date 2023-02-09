@@ -28,13 +28,13 @@ import Contact from '../components/Contact'
     scroll-behavior: smooth;
   }
   ::-webkit-scrollbar {
-    width: 6px;
+    width: 8px;
   }
   ::-webkit-scrollbar-track {
     background: transparent;
   }
   ::-webkit-scrollbar-thumb {
-    background: #0d0d0d;
+    background: #f3d335;
   }
   body {
     font-family: 'Poppins', sans-serif;
@@ -45,5 +45,11 @@ import Contact from '../components/Contact'
   }
   #description-home {
     font-size: var(--font-size-base);
+  }
+
+  @media only screen and (min-width: 1536px) {
+    #description-home {
+      font-size: var(--font-size-md);
+    }
   }
 </style>

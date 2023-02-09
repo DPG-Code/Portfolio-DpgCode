@@ -1,58 +1,63 @@
 ---
-import Header from '../components/Header';
+import Header from '../components/Header'
 
 export interface Props {
-	title: string;
+  title: string
 }
 
-const { title } = Astro.props;
+const { title } = Astro.props
 ---
 
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-    <meta name="author" content="Daniel Prieto Gaviria">
-		<link rel="icon" type="image/png" href="/assets/icon.png" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-    <meta name="description" content="Daniel Prieto Gaviria Front-end Developer | Technologies such as JavaScript, TypeScript, React.js, Next.js, Node.js, MongoDB">
-    <meta name="keywords" content="Daniel Prieto Gaviria, DPG-code, Front-end developer, programador web, full stack developer">
-	</head>
-	<body>
-    <Header />
-		<slot />
-	</body>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width' />
+    <meta name='author' content='Daniel Prieto Gaviria' />
+    <link rel='icon' type='image/png' href='/assets/icon.png' />
+    <meta name='generator' content={Astro.generator} />
+    <title>{title}</title>
+    <meta
+      name='description'
+      content='Daniel Prieto Gaviria Front-end Developer | Technologies such as JavaScript, TypeScript, React.js, Next.js, Node.js, MongoDB'
+    />
+    <meta
+      name='keywords'
+      content='Daniel Prieto Gaviria, DPG-code, Front-end developer, programador web, full stack developer'
+    />
+  </head>
+  <body class='dark:bg-[#0D0D0D]'>
+    <Header client:only />
+    <slot />
+  </body>
 </html>
 
-<style is:global> 
-  .navbar a{
+<style is:global>
+  .navbar a {
     transition: all 0.2s ease-in-out;
-    }
-    .navbar a:hover{
-      color: #0D0D0D;
-    }
+  }
+  .navbar a:hover {
+    color: #0d0d0d;
+  }
   .navbar .dot {
     width: 5px;
     height: 5px;
-    background: #0D0D0D;
     border-radius: 50%;
     opacity: 0;
     transition: all 0.2s ease-in-out;
-    }
-    .navbar a:hover ~ .dot {
-      transform: translateY(-18px);
-      opacity: 1;
   }
-  
-  @media only screen and (min-width : 1024px){
+  .navbar a:hover ~ .dot {
+    transform: translateY(-18px);
+    opacity: 1;
+  }
+
+  @media only screen and (min-width: 1024px) {
     .navbar a:hover ~ .dot {
       transform: translateY(-30px);
       opacity: 1;
     }
   }
-  @media only screen and (min-width : 1536px){
+  @media only screen and (min-width: 1536px) {
     .navbar a:hover ~ .dot {
       transform: translateY(-40px);
       opacity: 1;
