@@ -20,7 +20,7 @@ export default function Home() {
         <div className='z-20 w-52 h-52 font-bold text-sm text-[#0D0D0D] dark:text-[#FFFFFF] flex flex-col items-start justify-center absolute   lg:w-72 lg:h-72 lg:text-lg   2xl:w-96 2xl:h-96 2xl:text-3xl'>
           {
             technologies.map(tech => (
-              <p key={tech} className='opacity-[.15] dark:opacity-[.05]'>{tech}</p>
+              <p key={tech} className='opacity-[.15] dark:opacity-[.10]'>{tech}</p>
             ))
           }
         </div>

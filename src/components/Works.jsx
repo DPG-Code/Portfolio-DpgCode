@@ -15,7 +15,7 @@ export default function Works() {
   return (
     <section id='works' className="px-6 py-16 flex flex-col   sm:p-16   lg:p-24   2xl:p-36">
       <h2 className="mb-16 font-bold text-3xl text-[#0D0D0D] dark:text-[#FFFFFF]   lg:text-5xl lg:mb-24   2xl:text-6xl 2xl:mb-32">Works<span className='text-[#F3D335]'>.</span></h2>
-      <article className="flex flex-col gap-16">
+      <article className="flex flex-col gap-24   md:gap-32   lg:gap-52">
         {
           works.map((project, index) => (
               <div className='w-full flex flex-col gap-8   sm:flex-row sm:justify-between sm:gap-12   2xl:gap-24' key={index}>
@@ -34,7 +34,7 @@ export default function Works() {
                       ))
                     }
                   </ul>
-                  <span className='font-bold text-7xl text-[#0D0D0D] dark:text-[#FFFFFF] opacity-[.10] dark:opacity-[.05] absolute bottom-0 right-0   lg:text-9xl   2xl:text-[156px]'>
+                  <span className='font-bold text-7xl text-[#0D0D0D] dark:text-[#FFFFFF] opacity-[.10] absolute bottom-0 right-0   lg:text-9xl   2xl:text-[156px]'>
                     {index < 10 && '0'}{index + 1}
                   </span>
                 </section>

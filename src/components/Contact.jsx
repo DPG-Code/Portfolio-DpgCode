@@ -9,8 +9,8 @@ export default function Contact() {
         </svg>
       </a>
       <div className="circle_contact-1"></div>
-      <div className="circle_contact-down dark:border-[#FFFFFF] dark:opacity-[.05]"></div>
-      <div className="circle_contact-down-2 dark:border-[#FFFFFF] dark:opacity-[.05]"></div>
+      <div className="circle_contact-down dark:border-[#FFFFFF]"></div>
+      <div className="circle_contact-down-2 dark:border-[#FFFFFF]"></div>
       <footer className="w-full h-16 flex items-start justify-center absolute bottom-0   sm:h-24   2xl:h3-2">
         <ul className="w-auto h-5 flex items-center justify-center gap-6   sm:gap-10">
           <li className="font-semibold text-xs text-[#0D0D0D] dark:text-[#FFFFFF]   2xl:text-sm"><h4>DANIEL PRIETO</h4></li>

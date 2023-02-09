@@ -21,8 +21,8 @@ export default function MoreWorks() {
           moreWorks.map((project, index) => (
               <div className="w-full h-auto flex items-center justify-between" key={index}>
                 <div className="h-full mr-4 flex items-center justify-start   lg:mr-6   2xl:mr-12">
-                  <div className="mr-2 w-6 h-px bg-[#0D0D0D] dark:bg-[#FFFFFF] opacity-[.20] dark:opacity-[.10]   lg:w-10 lg:mr-4   2xl:w-16 2xl:mr-8"></div>
-                  <span className="font-medium textl-xl text-[#0D0D0D] dark:text-[#FFFFFF] opacity-[.20] dark:opacity-[.10]   lg:text-3xl   2xl:text-4xl">{index < 10 && '0'}{index + 1}</span>
+                  <div className="mr-2 w-6 h-px bg-[#0D0D0D] dark:bg-[#FFFFFF] opacity-[.20]   lg:w-10 lg:mr-4   2xl:w-16 2xl:mr-8"></div>
+                  <span className="font-medium textl-xl text-[#0D0D0D] dark:text-[#FFFFFF] opacity-[.20]   lg:text-3xl   2xl:text-4xl">{index < 10 && '0'}{index + 1}</span>
                 </div>
                 <section className="mr-auto h-auto flex flex-col items-start justify-center   lg:gap-3   2xl:gap-5">
                   <h4 className="font-semibold textl-3xl text-[#0D0D0D] dark:text-[#FFFFFF]   lg:text-4xl   2xl:text-5xl">{project.title}</h4>
