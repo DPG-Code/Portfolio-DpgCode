@@ -19,7 +19,7 @@ const works = [
       'TAILWIND'
     ],
     img: 'https://res.cloudinary.com/dhpxqwsym/image/upload/c_fill,h_240,q_100,w_384/v1677061650/portfolio/notes-app_yytjpe.webp',
-    url: 'https://notes-app-y1me.onrender.com/'
+    url: 'https://notes-app-dpgcode.up.railway.app/'
   },
   {
     title: 'ShoppyFree',
