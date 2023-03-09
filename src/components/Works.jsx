@@ -45,7 +45,7 @@ export default function Works() {
               <h4 className='font-bold text-2xl text-[#0D0D0D] dark:text-[#FFFFFF]   lg:text-5xl   2xl:text-6xl'>
                 {project.title}
               </h4>
-              <p className='font-medium text-sm text-[#595959]   lg:text-lg   2xl:text-xl'>
+              <p className='font-medium text-sm text-[#595959] dark:text-gray-400   lg:text-lg   2xl:text-xl'>
                 {project.description}
               </p>
               <ul className='font-bold text-xs text-[#0D0D0D] dark:text-[#FFFFFF] flex flex-wrap gap-x-2 gap-y-1   lg:text-sm   2xl:text-lg'>
