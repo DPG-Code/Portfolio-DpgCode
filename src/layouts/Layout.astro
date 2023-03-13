@@ -1,5 +1,5 @@
 ---
-import Header from '../components/Header'
+import Header from 'src/components/Header';
 
 export interface Props {
   title: string
@@ -7,14 +7,6 @@ export interface Props {
 
 const { title } = Astro.props
 ---
-
-<script>
-  const cursor = document.getElementById('cursor')
-  document.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.pageX + 'px'
-    cursor.style.top = e.pageY + 'px'
-  })
-</script>
 
 <html lang='en'>
   <head>
@@ -26,32 +18,20 @@ const { title } = Astro.props
     <title>{title}</title>
     <meta
       name='description'
-      content='Daniel Prieto Gaviria Front-end Developer | Technologies such as JavaScript, TypeScript, React.js, Next.js, Node.js, MongoDB'
+      content='Daniel Prieto Gaviria, Front-end Developer | JavaScript, TypeScript, React.js, Next.js, Astro, Svelte, Node.js, MongoDB, SQL, GraphQl, Figma, Illustrator and Corel'
     />
     <meta
       name='keywords'
-      content='Daniel Prieto Gaviria, DPG-code, Front-end developer, programador web, full stack developer'
+      content='daniel prieto gaviria, dpg code, frontend developer, full stack developer, javaScript, typeScript, react.js,next.js, astro, svelte, node.js, mongodb, sql, graphql, figma, illustrator, corel'
     />
   </head>
   <body class='dark:bg-[#0D0D0D] relative'>
-    <div
-      id='cursor'
-      class='w-7 h-7 absolute rounded-full border-2 border-[#0D0D0D] dark:border-[#FFFFFF]'
-    >
-    </div>
     <Header client:only />
     <slot />
   </body>
 </html>
 
 <style is:global>
-  #cursor {
-    z-index: 1000;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    transition: 0.05s;
-  }
-
   .navbar a {
     transition: all 0.2s ease-in-out;
   }

@@ -10,15 +10,6 @@
 .transition-fade{
   transition: all .2s ease-in-out;
 }
-.transition-getIn{
-  animation: getIn .6s ease 0s 1 normal forwards;
-}
-
-@keyframes getIn {
-	0% { transform: scale(0); }
-	100% { transform: scale(1); }
-}
-
 .icon-animation:hover > svg{
   transition: all .2s ease-in-out;
   transform: translateX(4px);

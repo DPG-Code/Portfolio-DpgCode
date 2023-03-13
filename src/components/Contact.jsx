@@ -1,4 +1,13 @@
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+
 export default function Contact() {
+  const { ref, inView } = useInView({ threshold: 0 })
+
+  const animate = inView ? { scale: 1 } : { scale: 0 }
+  const animateLCircle = inView ? { x: 0 } : { x: -200 }
+  const animateRCircle = inView ? { x: 0 } : { x: 200 }
+
   return (
     <div
       id='contact'
@@ -27,9 +36,25 @@ export default function Contact() {
           />
         </svg>
       </a>
-      <div className='circle_contact-1 dark:opacity-80'></div>
-      <div className='circle_contact-down dark:border-[#FFFFFF] dark:opacity-10'></div>
-      <div className='circle_contact-down-2 dark:border-[#FFFFFF] dark:opacity-10'></div>
+      <motion.div
+        ref={ref}
+        initial={{ scale: 0 }}
+        animate={animate}
+        transition={{ duration: 1 }}
+        className='circle_contact-1 dark:opacity-80'
+      ></motion.div>
+      <motion.div
+        initial={{ x: -200 }}
+        animate={animateLCircle}
+        transition={{ duration: 1 }}
+        className='circle_contact-down dark:border-[#FFFFFF] dark:opacity-10'
+      ></motion.div>
+      <motion.div
+        initial={{ x: 200 }}
+        animate={animateRCircle}
+        transition={{ duration: 1 }}
+        className='circle_contact-down-2 dark:border-[#FFFFFF] dark:opacity-10'
+      ></motion.div>
       <footer className='w-full h-16 flex items-start justify-center absolute bottom-0   sm:h-24   2xl:h3-2'>
         <ul className='w-auto h-5 flex items-center justify-center gap-6   sm:gap-10'>
           <li className='font-semibold text-xs text-[#0D0D0D] dark:text-[#FFFFFF]   2xl:text-sm'>

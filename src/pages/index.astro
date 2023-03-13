@@ -1,17 +1,17 @@
 ---
-import '../styles/App.css'
-import Layout from '../layouts/Layout.astro'
-import Home from '../components/Home'
-import Works from '../components/Works'
-import MoreWorks from '../components/MoreWorks'
-import Contact from '../components/Contact'
+import 'src/styles/App.css'
+import Layout from 'src/layouts/Layout.astro'
+import Home from 'src/components/Home'
+import Works from 'src/components/Works'
+import MoreWorks from 'src/components/MoreWorks'
+import Contact from 'src/components/Contact'
 ---
 
-<Layout title='Daniel Prieto | Front-end Developer'>
-  <Home />
-  <Works />
+<Layout title='Daniel Prieto Gaviria | Frontend Developer | DPG-Code'>
+  <Home client:load/>
+  <Works client:load/>
   <MoreWorks />
-  <Contact />
+  <Contact client:load/>
 </Layout>
 
 <style is:global>
